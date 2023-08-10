@@ -167,6 +167,7 @@ def main():
 
         st.table(player_data)
 
+
 def get_db_connection():
 
     # Create a connection object.
