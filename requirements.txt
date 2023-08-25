@@ -4,4 +4,4 @@ gspread==5.10.0
 google-auth==2.22.0
 gsheetsdb==0.1.13.1
 git+https://github.com/streamlit/gsheets-connection
-
+validators==0.20.0
