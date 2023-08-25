@@ -9,7 +9,6 @@ from google.oauth2 import service_account
 from streamlit_gsheets import GSheetsConnection
 
 
-
 def col_idx(col: str) -> int:
     """
 
@@ -41,6 +40,7 @@ def controls(player_dict: dict):
             break
     if len(msg) > 0:
         st.toast(msg)
+
 
 def harbor_count(lst, x):
     count = 0
@@ -181,7 +181,7 @@ def connect_for_insert():
         scopes=scope,
     )
     client = gspread.authorize(credentials)
-    sh = client.open_by_key('1DGKLNqnlpgHX9E-FZpEzapUswjO3lf8RLywmEptsYDE')
+    sh = client.open_by_key(st.secrets["worksheet_key"])
     worksheet = sh.get_worksheet(0)
     return worksheet
 
