@@ -3,3 +3,5 @@ streamlit==1.25.0
 gspread==5.10.0
 google-auth==2.22.0
 gsheetsdb==0.1.13.1
+streamlit-gsheets @ git+https://github.com/streamlit/gsheets-connection
+
